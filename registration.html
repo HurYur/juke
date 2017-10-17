@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="index.html">
+				<img class="logo" alt="logo" src="img/logo.png">
+			</a>
+			<div class="main-nav nav">
+				<div id="main-nav-toggle" class="collapse-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<div class="collapse">
+					<div class="menu-item"><a href="index.html">HOME</a></div>
+					<div class="menu-item"><a href="location.html">Location</a></div>
+					<div class="menu-item"><a href="interior.html">Interiors</a></div>
+					<div class="menu-item"><a href="floorplan.html">floorplans</a></div>
+					<div class="menu-item logo-placeholder"></div>
+					<div class="menu-item"><a href="developer.html">developer</a></div>
+					<div class="menu-item"><a href="#">CONTACT</a></div>
+				</div>
+				<div class="register-btn"><a href="registration.html"></a></div>
+			</div>
+		</div>
+	</header>
+	<main class="main registration">
+		<div class="banner" style="background-image: url('img/register/bannerregister.jpg')">
+		</div>
+		<div class="container">
+			<div class="content">
+				<div class="page-description">
+					<h1>Registration</h1>
+                    <p class="title">Tell us about yourself so we can ensure you get the information you need about Jukebox Victoria.</p>
+					<form id="registration-form" class="form" action="#" method="post">
+						<label for="title-field">Title</label>
+						<input type="text" name="title" id="title-field">
+
+                        <div class="row">
+							<div class="col">
+								<label for="firstname">First Name</label>
+								<input type="text" name="first" id="firstname">
+							</div>
+							<div class="col">
+								<label for="lastname">Last Name</label>
+								<input type="text" name="last" id="lastname">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email">
+							</div>
+							<div class="col">
+								<label for="phone">Phone</label>
+								<input type="text" name="phone" id="phone">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<label for="city">Current City</label>
+								<input type="text" name="city" id="city">
+							</div>
+							<div class="col">
+								<label for="about">How did you hear about us?</label>
+								<input type="text" name="about" id="about">
+							</div>
+                        </div>
+
+						<label for="enquiry">Type of Enquiry?</label>
+						<input type="text" name="enquiry" id="enquiry">
+
+                        <p class="radio-label">Are you a realtor?</p>
+                        <input type="radio" name="is-realtor" value="Yes" checked id="realtor-true">
+                        <label class="checkbox-label" for="realtor-true">Yes</label>
+
+                        <input type="radio" name="is-realtor" value="No" id="realtor-false">
+                        <label class="checkbox-label" for="realtor-false">No</label>
+
+                        <label for="firm-name">If you are a relator, please identify your brokerage firm.</label>
+                        <input type="text" name="firm" id="firm-name">
+
+                        <p class="radio-label">Are you working with a realtor?</p>
+						<input type="radio" name="work-with-realtor" value="Yes" checked id="work-true">
+						<label class="checkbox-label" for="work-true">Yes</label>
+
+						<input type="radio" name="work-with-realtor" value="No" id="work-false">
+						<label class="checkbox-label" for="work-false">No</label>
+
+						<label for="realtor-name">If you are working with a realtor, please indicate your realtor's name.</label>
+						<input type="text" name="realtor" id="realtor-name">
+
+						<label for="comment-field">Comments</label>
+						<textarea rows="4" name="comment" id="comment-field"></textarea>
+
+						<p class="checkbox-question">Please confirm you would like further updates from JukeBox Victoria.</p>
+                        <input type="checkbox" name="updates" id="updates">
+						<label class="checkbox-label" for="updates">Yes, I have expressed consent.</label>
+
+                        <p class="captcha-description">Verify captcha</p>
+
+                        <div class="g-recaptcha" data-sitekey="6LfbOyQUAAAAANEyG6k9PLC4D_jX7rYNTSETdXM2"></div>
+
+						<input class="submit" type="submit" name="button" value="SUBMIT" >
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<ul class="nav">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="interior.html">Interiors</a></li>
+			<li><a href="floorplan.html">floorplans</a></li>
+			<li><a href="developer.html">developers</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+
+		<img src="img/signature-gold.png" alt="signature" class="signature">
+		<p class="copyright">All Rights Reserved 2017</p>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
